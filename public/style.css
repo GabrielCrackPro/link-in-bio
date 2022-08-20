@@ -1,0 +1,116 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  overflow: hidden;
+  user-select: none;
+}
+body{
+  height: 100vh;
+}
+nav img{
+  padding: 2px;
+  height: 30px;
+  width: 30px; 
+}
+.avatar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.logo{
+  height: 60px;
+  width: 60px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+.bg-dark{
+  background: transparent !important;
+}
+.social-links{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.social-links li{
+  text-align: center;
+  padding: 15px;
+  margin: 5px;
+  width: 200px;
+  max-width: 300px;
+  border: 1px solid #000;
+  border-radius: 5%;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(2px);
+}
+.social-links li a{
+  color: #fff;
+  text-decoration: none;
+  width: 100vw;
+}
+.social-links span {
+  font-size: 17px;
+}
+#instagram span{
+  color: rgb(226,47,107);
+}
+#twitter span{
+  color: rgb(0,172,237)
+}
+#reddit span{
+  color: rgb(255,87,1);
+}
+#github span {
+  color: rgb(51,51,51);
+}
+#instagram:hover{
+  background: rgba(226,47,107,0.6);
+  transition: background 0.3s ease;
+}
+#twitter:hover{
+  background: rgba(0,172,237,0.6);
+  transition: background 0.3s ease;
+}
+#reddit:hover{
+  background: rgba(255,87,1,0.6);
+  transition: background 0.3s ease;
+}
+#github:hover{
+  background: rgba(51,51,51,0.6);
+  transition: background 0.3s ease;
+}
+#instagram:hover span,
+#twitter:hover span,
+#reddit:hover span,
+#github:hover span{
+  font-size: 23px;
+  transition: font-size 0.3s ease;
+}
+#instagram:not(:hover) span,
+#twitter:not(:hover) span,
+#reddit:not(:hover) span,
+#github:not(:hover) span{
+  font-size: 20px;
+  transition: font-size 0.3s ease;
+}
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100vw 
+}
+footer p {
+  text-align: center;
+  color: #fff;
+}
+footer p a{
+  color: #fff;
+}
+footer p a:hover{
+  color: #fff;
+  text-decoration: underline;
+}
